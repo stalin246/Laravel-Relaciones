@@ -8,11 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     use HasFactory;
+    protected $guarded=[];
+
      // RELACIÓN DE UNO A UNO
      public function user()
      {
          return $this->belongsTo(User::class);
      }
+    // RELACIÓN DE UNO A UNO
+    public function location()
+    {
+        return $this->hasOne(Location::class);
+    }
+
 
 
 }

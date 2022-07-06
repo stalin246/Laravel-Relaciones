@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Level>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Tag>
  */
-class LevelFactory extends Factory
+class TagFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,7 @@ class LevelFactory extends Factory
     public function definition()
     {
         return [
-            //
-            
+            'nombre'=> $this->faker->name
         ];
     }
 }
